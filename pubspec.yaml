@@ -1,7 +1,7 @@
 name: select_days_week
 description: A Widget to select days of the week, with the possibility of simple and multiple selection, filtering and validation
-version: 0.0.2
-homepage: https://github.com/ReniDelonzek
+version: 0.0.3
+homepage: https://github.com/ReniDelonzek/select_days_week
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
