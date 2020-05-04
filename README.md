@@ -1,14 +1,23 @@
-# select_days_week
+# Select Days Week
 
 A widget to select days of the week
 
-Example Use:
+## Features:
+- Single and multiple selection
+- Select non-selectable days
+- Validate selected day
+- Customizable selection color
 
-```SelectDaysWeekWidget(
+## Example Use
+
+```
+SelectDaysWeekWidget(
     SelectDaysWeekController(
       unSelectableDays: [1, 5],
     ),
     daySelected: (int day) {
       print(day);
     },
-);```
+);
+```
+
