@@ -1,12 +1,13 @@
 name: select_days_week
 description: A Widget to select days of the week, with the possibility of simple and multiple selection, filtering and validation
-version: 0.0.3
+version: 0.1.0
 homepage: https://github.com/ReniDelonzek/select_days_week
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
 
 dependencies:
+  intl: ^0.16.1
   flutter_mobx: ^1.1.0
   mobx: ^1.1.1
   flutter:

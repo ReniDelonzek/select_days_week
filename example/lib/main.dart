@@ -15,9 +15,16 @@ class _ExampleState extends State<Example> {
   Widget build(BuildContext context) {
     return Center(
       child: SelectDaysWeekWidget(
-        SelectDaysWeekController(
-          unSelectableDays: [1, 5],
-        ),
+        SelectDaysWeekController(unSelectableDays: [
+          1,
+          5
+        ], specificDays: [
+          DateTime(2000, 01, 03),
+          DateTime(2000, 01, 06),
+          DateTime(2000, 01, 07),
+          DateTime(2000, 01, 08),
+          //any days
+        ]),
         color: Colors.green,
         singleDay: false,
         validatorDay: (int day) async {

@@ -70,7 +70,7 @@ class SelectDaysWeekWidget extends StatelessWidget {
                     : null,
                 child: Center(
                   child: Text(
-                    day.name[0],
+                    day.name[0].toUpperCase(),
                     //Pega a primeira letra
                     textAlign: TextAlign.left,
                     style: TextStyle(
