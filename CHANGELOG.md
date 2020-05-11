@@ -19,3 +19,7 @@
 * Add Suport internationalization
 
 * Possibility to specify days of the week
+
+## [0.1.1] - 2020-03-11.
+
+* Add Screen Example
