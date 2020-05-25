@@ -1,6 +1,6 @@
 <h2 align="center">Select Days Week</h2>
 
-A widget to select days of the week
+A widget to select days of the week. Pub: https://pub.dev/packages/select_days_week
 
 <p align="center">
   <img src="https://github.com/ReniDelonzek/select_days_week/blob/master/screenshots/Screenshot_1.png?raw=true" width="350px">
