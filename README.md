@@ -1,5 +1,7 @@
 # Select Days Week 
 
+<img src="https://img.shields.io/github/license/ReniDelonzek/select_days_week">
+
 A widget to select days of the week. 
 
 Pub: https://pub.dev/packages/select_days_week
