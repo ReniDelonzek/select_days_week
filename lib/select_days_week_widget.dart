@@ -24,13 +24,21 @@ class SelectDaysWeekWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceAround,
-      children: controller.days.map((element) => _getDay(element)).toList(),
+    return Wrap(
+      direction: Axis.horizontal,
+      alignment: WrapAlignment.spaceAround,
+      crossAxisAlignment: WrapCrossAlignment.center,
+      //mainAxisAlignment: MainAxisAlignment.spaceAround,
+      children: controller.days
+          .map((element) => Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: _getDay(context, element),
+              ))
+          .toList(),
     );
   }
 
-  Widget _getDay(Day day) {
+  Widget _getDay(BuildContext context, Day day) {
     return Observer(
       builder: (_) => Container(
           width: 45,
@@ -41,7 +49,9 @@ class SelectDaysWeekWidget extends StatelessWidget {
                   : Colors.black12,
               borderRadius: BorderRadius.all(Radius.circular(22.5)),
               border: new Border.all(
-                  color: day.isSelected || !day.isSelectable
+                  color: day.isSelected ||
+                          !day.isSelectable ||
+                          Theme.of(context).brightness == Brightness.dark
                       //Caso esteja selecionado ou, não posa ser selecionado
                       ? Colors.transparent
                       : color)),
@@ -79,7 +89,9 @@ class SelectDaysWeekWidget extends StatelessWidget {
                         letterSpacing: 0.27,
                         color: !day.isSelectable
                             ? Colors.black54
-                            : day.isSelected ? Colors.white : color),
+                            : day.isSelected
+                                ? Colors.white
+                                : color),
                   ),
                 ),
               ))),
